@@ -16,8 +16,9 @@
 
 In the first stage we implemented a web app that can connect to a web server and get the picturse from ip-cams and detect people with mask and with out mask in that enviroment. Here is the example on ios device:
 
-![Output sample](https://gifs.com/gif/face-mask1-0YGZ9K)
+![Output sample](https://github.com/ahforoughi/COVID-19-live-face-mask-detection/blob/master/gif.gif)
 
+We are working on sneeze and cough detection and will be released ASAP.
 
 ### Built With
 * TensorFlow v2
