@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 clone this project and install requierements of this project with bellow command.
-* npm
+
   ```sh
   pip install requierements.txt
   ```
