@@ -1,5 +1,5 @@
 # COVID-19-live-face-mask-detection
-
+Real time multi face mask and cough detection 
 <!-- PROJECT LOGO -->
 <br />
 
