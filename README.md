@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/ahforoughi/COVID19-camera-surveillance/blob/master/120.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/ahforoughi/COVID19-camera-surveillance/blob/master/120.png" alt="Logo" width="160" height="160">
   </a>
 </p>
 
