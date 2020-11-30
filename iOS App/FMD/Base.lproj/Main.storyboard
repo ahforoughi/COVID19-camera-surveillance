@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D17-vn-e7d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Webview View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" id="BYZ-38-t0r" customClass="WebviewViewController" customModule="FMD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-OQ-GrB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PIt-OQ-GrB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KI1-0c-1v7"/>
+                            <constraint firstItem="PIt-OQ-GrB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XL9-0N-9kr"/>
+                            <constraint firstAttribute="bottom" secondItem="PIt-OQ-GrB" secondAttribute="bottom" id="kgO-bF-ydI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIt-OQ-GrB" secondAttribute="trailing" id="zns-v8-93O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L0p-Ab-GOz"/>
+                    <connections>
+                        <outlet property="vwWebView" destination="PIt-OQ-GrB" id="vEi-pL-m6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+        <!--Setup View Controller-->
+        <scene sceneID="sck-mi-Xey">
+            <objects>
+                <viewController id="D17-vn-e7d" customClass="SetupViewController" customModule="FMD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="izE-gI-aiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server IP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jZ-aG-0L9">
+                                <rect key="frame" x="10" y="436" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gtb-O2-tyA">
+                                <rect key="frame" x="307" y="436" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="2h9-AO-XBM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Server IP &amp; Port Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19v-Ny-b88">
+                                <rect key="frame" x="10" y="405" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-gv-Lcy">
+                                <rect key="frame" x="107" y="490" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="EUy-el-HE7"/>
+                                    <constraint firstAttribute="height" constant="50" id="rfI-we-zMa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonDidTap:" destination="D17-vn-e7d" eventType="touchUpInside" id="6eP-5Q-77c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VnX-Ro-jIv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gtb-O2-tyA" firstAttribute="centerY" secondItem="5jZ-aG-0L9" secondAttribute="centerY" id="3FI-Ho-EMF"/>
+                            <constraint firstItem="SfG-gv-Lcy" firstAttribute="top" secondItem="5jZ-aG-0L9" secondAttribute="bottom" constant="20" id="9hy-gI-JaI"/>
+                            <constraint firstItem="VnX-Ro-jIv" firstAttribute="trailing" secondItem="19v-Ny-b88" secondAttribute="trailing" constant="10" id="AXt-CS-HEr"/>
+                            <constraint firstItem="VnX-Ro-jIv" firstAttribute="trailing" secondItem="Gtb-O2-tyA" secondAttribute="trailing" constant="10" id="KdD-o5-cr0"/>
+                            <constraint firstItem="19v-Ny-b88" firstAttribute="leading" secondItem="VnX-Ro-jIv" secondAttribute="leading" constant="10" id="VxL-rC-v9Z"/>
+                            <constraint firstItem="SfG-gv-Lcy" firstAttribute="centerX" secondItem="VnX-Ro-jIv" secondAttribute="centerX" id="gU9-if-KpS"/>
+                            <constraint firstItem="5jZ-aG-0L9" firstAttribute="top" secondItem="19v-Ny-b88" secondAttribute="bottom" constant="10" id="imk-rU-FvA"/>
+                            <constraint firstItem="Gtb-O2-tyA" firstAttribute="leading" secondItem="5jZ-aG-0L9" secondAttribute="trailing" constant="5" id="vCa-fs-NiL"/>
+                            <constraint firstItem="5jZ-aG-0L9" firstAttribute="centerY" secondItem="VnX-Ro-jIv" secondAttribute="centerY" id="vxv-Ua-fMz"/>
+                            <constraint firstItem="5jZ-aG-0L9" firstAttribute="leading" secondItem="VnX-Ro-jIv" secondAttribute="leading" constant="10" id="yux-3m-UPH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ipTextField" destination="5jZ-aG-0L9" id="G8g-nh-kqc"/>
+                        <outlet property="portTextField" destination="Gtb-O2-tyA" id="L2b-9d-bYD"/>
+                        <outlet property="startButton" destination="SfG-gv-Lcy" id="Q7I-5X-iQM"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="StartSegue" id="N9r-dj-5Eg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0w-8U-cOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617.39130434782612" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
