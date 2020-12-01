@@ -24,6 +24,8 @@ We are working on sneeze and cough detection and will be released ASAP.
 * Keras
 * OpenCV
 * Streamlit
+* Ruby 
+* Swift
 
 
 
