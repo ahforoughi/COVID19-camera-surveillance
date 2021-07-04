@@ -32,7 +32,7 @@ We are working on sneeze and cough detection and will be released ASAP.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may run this project locally.
+This is an example of how you may run this project locally
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
