@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 clone this project and install requierements of this project with bellow command.
 
   ```sh
-  pip install requierements.txt
+  pip install -r requirements.txt
   ```
 
 <!-- USAGE EXAMPLES -->
